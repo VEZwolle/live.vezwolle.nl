@@ -78,6 +78,27 @@
   <a href="https://www.vezwolle.nl/" class="back-button">
     &larr; Terug naar vezwolle.nl
   </a>
+
+  <!-- Core Firebase JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+  <!-- SDKs for Firebase products -->
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyA4xT87kk4VVP4fizo8BsR4Kvsxn-9fO24",
+      authDomain: "vez-tv.firebaseapp.com",
+      databaseURL: "https://vez-tv.firebaseio.com",
+      projectId: "vez-tv",
+      storageBucket: "vez-tv.appspot.com",
+      messagingSenderId: "1095952014176",
+      appId: "1:1095952014176:web:907a1ecb3037962d6b5c05",
+      measurementId: "G-LZ6KZW4195"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
 
 </html>
