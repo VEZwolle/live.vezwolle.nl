@@ -1,0 +1,7 @@
+image: rambabusaravanan/firebase
+
+deploy:
+  stage: deploy
+  script:
+    - firebase use vez-tv --token $FIREBASE_TOKEN
+    - firebase deploy --token $FIREBASE_TOKEN
