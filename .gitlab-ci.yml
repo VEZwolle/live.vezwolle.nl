@@ -5,4 +5,4 @@ deploy:
   only:
     - master
   script:
-    - firebase deploy --token $FIREBASE_TOKEN
+    - firebase deploy -m "$CI_COMMIT_MESSAGE" --token $FIREBASE_TOKEN
