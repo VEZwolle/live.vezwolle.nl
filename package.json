@@ -1,0 +1,13 @@
+{
+  "name": "live.vezwolle.nl",
+  "scripts": {
+    "minify": "npm run minify:html && npm run minify:css",
+    "minify:html": "html-minifier --input-dir src --output-dir public --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype",
+    "minify:css": "cssnano src/style.css public/style.css"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "cssnano-cli": "^1.0.5",
+    "html-minifier": "^4.0.0"
+  }
+}
