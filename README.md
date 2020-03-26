@@ -7,3 +7,4 @@ Code die je hier aanpast wordt automatisch direct(!) live gezet op Netlify.
 - Facebook link share toont Givt logo, moet ander plaatje komen
 - Mobile header minder hoog
 - Google Analytics?
+- Link naar gebarentaal versie
