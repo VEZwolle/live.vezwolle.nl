@@ -519,6 +519,9 @@ p {
 .single_donate.donate_color_3 {
   background-color: #42cb97;
 }
+.single_donate.donate_color_4 {
+  background-color: #339966;
+}
 .single_donate:hover .donate_image img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
