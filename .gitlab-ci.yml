@@ -1,8 +1,0 @@
-image: rambabusaravanan/firebase
-
-deploy:
-  stage: deploy
-  only:
-    - master
-  script:
-    - firebase deploy -m "$CI_COMMIT_MESSAGE" --token $FIREBASE_TOKEN
