@@ -1,13 +1,15 @@
 {
   "name": "live.vezwolle.nl",
   "scripts": {
+    "build": "npm run minify && npm run copy:images",
     "minify": "npm run minify:html && npm run minify:css",
-    "minify:html": "html-minifier --input-dir src --output-dir public --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype",
-    "minify:css": "cssnano src/style.css public/style.css"
+    "minify:html": "html-minifier --input-dir src --output-dir dist --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype",
+    "minify:css": "cssnano src/style.css dist/style.css",
+    "copy:images": "ncp src/images dist/images"
   },
   "dependencies": {
-    "cssnano": "^4.1.10",
     "cssnano-cli": "^1.0.5",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "ncp": "^2.0.0"
   }
 }
