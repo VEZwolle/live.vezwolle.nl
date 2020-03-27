@@ -535,13 +535,13 @@ p {
   position: relative;
 }
 .gebaren_shape {
-  height: 30px;
+  height: 20px;
   width: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: -40px;
+  bottom: -80px;
   left: 0;
   z-index: 9;
 }
