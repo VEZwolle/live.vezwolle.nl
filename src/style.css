@@ -364,7 +364,7 @@ p {
 }
 
 .single_stream {
-  height: 800px;
+  height: 900px;
   position: relative;
 }
 @media only screen and (min-width: 1400px) {
@@ -533,6 +533,7 @@ p {
 /* Gebaren */
 .gebaren_area {
   position: relative;
+  height: 20px;
 }
 .gebaren_shape {
   height: 20px;
