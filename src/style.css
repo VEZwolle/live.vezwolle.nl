@@ -533,7 +533,6 @@ p {
 /* Gebaren */
 .gebaren_area {
   position: relative;
-  height: 20px;
 }
 .gebaren_shape {
   height: 20px;
@@ -559,7 +558,7 @@ p {
 }
 
 .single_gebaren {
-  height: 800px;
+  height: 40px;
   position: relative;
 }
 @media only screen and (min-width: 1400px) {
