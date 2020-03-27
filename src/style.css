@@ -535,7 +535,7 @@ p {
   position: relative;
 }
 .gebaren_shape {
-  height: 73px;
+  height: 30px;
   width: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -598,7 +598,7 @@ p {
   .single_gebaren .donate_content {
     padding: 45px 30px;
   }
-
+}
 /* Footer */
 .footer_area {
   background-color: #1a191f;
@@ -627,6 +627,7 @@ p {
   width: 50%;
   padding-left: 0px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer_link {
     padding-left: 60px;
