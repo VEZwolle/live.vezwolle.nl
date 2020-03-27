@@ -553,9 +553,6 @@ p {
   -o-transition: transform 0.3s ease-out 0s;
   transition: transform 0.3s ease-out 0s;
 }
-.single_gebaren .donate_content {
-  padding: 45px 30px;
-}
 
 .single_gebaren {
   height: 40px;
@@ -563,17 +560,17 @@ p {
 }
 @media only screen and (min-width: 1400px) {
   .single_gebaren {
-    height: 950px;
+    height: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single_gebaren {
-    height: 750px;
+    height: 40px;
   }
 }
 @media (max-width: 767px) {
   .single_gebaren {
-    height: 650px;
+    height: 40px;
   }
 }
 .single_gebaren.gebaren_color_4 {
