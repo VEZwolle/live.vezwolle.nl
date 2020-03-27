@@ -540,7 +540,7 @@ p {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: center;
   bottom: -80px;
   left: 0;
   z-index: 9;
