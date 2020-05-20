@@ -1,7 +1,7 @@
 /* Common */
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
   font-style: normal;
   color: #616161;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +42,7 @@ img {
 h3,
 h4,
 h5 {
-  font-family: "Chelsea Market", "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Ubuntu", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 700;
   color: #2b2a35;
   margin: 0px;
@@ -97,7 +97,7 @@ p {
   padding: 0 30px;
   font-size: 16px;
   line-height: 48px;
-  border-radius: 5px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -106,14 +106,14 @@ p {
   -ms-transition: background-color 0.4s ease-out 0s;
   -o-transition: background-color 0.4s ease-out 0s;
   transition: background-color 0.4s ease-out 0s;
-  background-color: #962889;
+  background-color: #95426c;
+  -webkit-box-shadow: 0 4px 8px -2px rgba(149, 66, 108, 0.4);
+  -moz-box-shadow: 0 4px 8px -2px rgba(149, 66, 108, 0.4);
+  box-shadow: 0 4px 8px -2px rgba(149, 66, 108, 0.4);
 }
 .main-btn:hover {
-  background-color: #a03d94;
+  background-color: #873c62;
   color: #fff;
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(34, 34, 34, 0.15);
-  -moz-box-shadow: 0px 0px 25px 0px rgba(34, 34, 34, 0.15);
-  box-shadow: 0px 0px 25px 0px rgba(34, 34, 34, 0.15);
 }
 
 .section_title .title {
@@ -131,9 +131,17 @@ p {
   padding-top: 56.25%;
   position: relative;
   background: #000;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  -moz-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  transform: translateY(90px);
+}
+
+@media only screen and (max-width: 576px) {
+  .iframe-container {
+    transform: translateY(100px);
+  }
 }
 
 .iframe-container iframe {
@@ -256,7 +264,7 @@ p {
 .navbar-nav li a {
   font-size: 15px;
   font-weight: 700;
-  padding: 30px 15px;
+  padding: 50px 15px;
   color: #2b2a35;
   -webkit-transition: color 0.3s ease-out 0s;
   -moz-transition: color 0.3s ease-out 0s;
@@ -266,7 +274,7 @@ p {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .navbar-nav li a {
-    padding: 30px 10px;
+    padding: 50px 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -282,7 +290,7 @@ p {
   }
 }
 .navbar-nav li:hover > a {
-  color: #962889;
+  color: #daadc4;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -343,7 +351,7 @@ p {
   }
 }
 .navbar_transparent .navbar-nav li:hover > a {
-  color: #962889;
+  color: #daadc4;
 }
 
 /* Stream */
@@ -357,29 +365,33 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(left, #962889 0%, #1383bc 100%);
-  background: -o-linear-gradient(left, #962889 0%, #1383bc 100%);
-  background: linear-gradient(to right, #962889 0%, #1383bc 100%);
+  background: -webkit-linear-gradient(to right, #95426c 0%, #1383bc 100%);
+  background: -o-linear-gradient(to right, #95426c 0%, #1383bc 100%);
+  background: linear-gradient(to right, #95426c 0%, #1383bc 100%);
   opacity: 0.8;
 }
 
 .single_stream {
-  height: 800px;
-  position: relative;
+  height: 100%;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 576px) {
   .single_stream {
-    height: 900px;
+    height: 300px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .single_stream {
-    height: 750px;
+    height: 400px;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 992px) {
   .single_stream {
-    height: 450px;
+    height: 560px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .single_stream {
+    height: 680px;
   }
 }
 
@@ -415,6 +427,10 @@ p {
 }
 .gebaren_image img {
   width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  -moz-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
 }
 .gebaren_image a {
   position: absolute;
@@ -429,7 +445,7 @@ p {
   height: 80px;
   line-height: 80px;
   text-align: center;
-  background-color: #962889;
+  background-color: #95426c;
   color: #fff;
   font-size: 20px;
   z-index: 5;
@@ -454,7 +470,7 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #962889;
+  background-color: #95426c;
   border-radius: 50%;
   -webkit-animation: video-ripple 1500ms ease-out infinite;
   -moz-animation: video-ripple 1500ms ease-out infinite;
@@ -494,7 +510,6 @@ p {
 }
 .gebaren_content .gebaren_title {
   font-size: 48px;
-  font-weight: 400;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .gebaren_content .gebaren_title {
@@ -608,7 +623,6 @@ p {
 
 .care_content .title {
   font-size: 40px;
-  font-weight: 400;
 }
 @media (max-width: 767px) {
   .care_content .title {
@@ -624,7 +638,6 @@ p {
 }
 .single_care .care_content .care_title {
   font-size: 18px;
-  font-weight: 400;
 }
 .single_care .care_content p {
   padding-top: 15px;
@@ -647,9 +660,17 @@ p {
   z-index: 9;
 }
 
+.single_donate {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  -moz-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+}
 .single_donate .donate_image {
   overflow: hidden;
   position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .single_donate .donate_image a {
   display: block;
@@ -723,7 +744,7 @@ p {
 
 /* Footer */
 .footer_area {
-  background-color: #1a191f;
+  background-color: #414e4d;
   position: relative;
 }
 .footer_area::before {
@@ -740,8 +761,8 @@ p {
 }
 .footer_area .footer_title {
   font-size: 16px;
-  font-weight: 400;
-  font-family: "Chelsea Market", cursive;
+  font-weight: 700;
+  font-family: "Ubuntu", cursive;
   color: #fff;
 }
 
@@ -768,7 +789,7 @@ p {
 }
 .footer_link .link li a {
   font-size: 16px;
-  color: #9f9f9f;
+  color: rgba(255, 255, 255, 0.8);
   -webkit-transition: color 0.3s ease-out 0s;
   -moz-transition: color 0.3s ease-out 0s;
   -ms-transition: color 0.3s ease-out 0s;
@@ -776,10 +797,10 @@ p {
   transition: color 0.3s ease-out 0s;
 }
 .footer_link .link li a:hover {
-  color: #962889;
+  color: #fff;
 }
 
 .footer_info p {
   margin-top: 25px;
-  color: #9f9f9f;
+  color: rgba(255, 255, 255, 0.8);
 }
