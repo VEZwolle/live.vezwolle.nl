@@ -136,6 +136,7 @@ p {
   -moz-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
   box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
   transform: translateY(90px);
+  z-index: 999;
 }
 
 @media only screen and (max-width: 576px) {
