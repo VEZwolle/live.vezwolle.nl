@@ -74,14 +74,6 @@ p {
   margin: 0px;
 }
 
-.bg_cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
 /* Button Style */
 .main-btn {
   display: inline-block;
@@ -358,6 +350,9 @@ p {
 /* Stream */
 .stream_area {
   position: relative;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .stream_area::before {
   position: absolute;
