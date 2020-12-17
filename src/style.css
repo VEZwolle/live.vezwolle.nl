@@ -179,6 +179,29 @@ p {
   padding-bottom: 130px;
 }
 
+/* Christmas banner */
+.christmas-banner {
+  font-family: "Patrick Hand";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding: 18px;
+  background: rgb(45, 42, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 42, 61, 1) 0%,
+    rgba(217, 121, 35, 1) 30%,
+    rgba(217, 121, 35, 1) 60%,
+    rgba(45, 42, 61, 1) 100%
+  );
+  border-radius: 7.5px;
+  -webkit-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  -moz-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  -ms-box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+  box-shadow: 0 4px 8px rgba(65, 78, 77, 0.15);
+}
+
 /* Header */
 .header_navbar {
   position: relative;
@@ -330,14 +353,10 @@ p {
   z-index: 5;
 }
 .gebaren_image a svg .ytp-large-play-button-bg {
-  -webkit-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1),
-    fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
-  -moz-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1),
-    fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
-  -ms-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1),
-    fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
-  transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1),
-    fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
 }
 .gebaren_image a:hover svg .ytp-large-play-button-bg {
   fill: #f00;
