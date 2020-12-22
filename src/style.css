@@ -263,7 +263,7 @@ p {
 /* Stream */
 .stream_area {
   position: relative;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
