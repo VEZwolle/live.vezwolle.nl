@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npm run minify && npm run copy:images",
     "minify": "npm run minify:html && npm run minify:css && npm run minify:js",
-    "minify:html": "html-minifier --input-dir src --output-dir dist --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --use-short-doctype",
+    "minify:html": "html-minifier --input-dir src --output-dir dist --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --use-short-doctype --minify-js",
     "minify:css": "cssnano src/style.css dist/style.css",
     "minify:js": "uglifyjs src/script.js --output dist/script.js --compress --mangle --toplevel",
     "copy:images": "ncp src/images dist/images"
