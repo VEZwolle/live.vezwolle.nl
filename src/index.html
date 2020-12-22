@@ -259,21 +259,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie_light.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    ['phone', 'mail'].forEach(function (icon) {
-      var lottie = bodymovin.loadAnimation({
-        container: document.getElementById('care_' + icon + '_icon'),
-        path: 'images/lottie/' + icon + '.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: false
-      });
-
-      var container = document.getElementById('care_' + icon);
-      container.addEventListener('mouseenter', function () { lottie.play() });
-      container.addEventListener('mouseleave', function () { lottie.stop() });
-    });
-  </script>
+  <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
