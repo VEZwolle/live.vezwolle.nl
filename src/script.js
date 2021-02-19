@@ -39,7 +39,9 @@ function updateCurrentLivestream () {
   }
 }
 
-function getComingSoonScreen (poster = 'comingsoon.jpg') {
+function getComingSoonScreen (poster) {
+  poster = poster || 'comingsoon.jpg'
+
   var imageFolder = window.location.origin + '/images/'
   var imagePath = imageFolder + poster
 
