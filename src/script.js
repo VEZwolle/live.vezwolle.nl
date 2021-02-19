@@ -13,17 +13,16 @@ function updateCurrentLivestream () {
 
   for (var i = 0; i < streams.length; i++) {
     var stream = streams[i]
-    var nextStream = streams[i - 1] || null
 
     var from = new Date(stream.from)
     if (now >= from) {
-      if (!stream.ids && nextStream) {
-        $livestreamIframe.src = getComingSoonScreen(nextStream)
+      if (!stream.ids) {
+        $livestreamIframe.src = getComingSoonScreen(stream.poster)
         break
       }
 
       var urls = {
-        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier,
+        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier + '?autoplay=1',
         gebarentolk: 'https://youtu.be/' + stream.ids.gebarentolk
       }
 
@@ -40,14 +39,11 @@ function updateCurrentLivestream () {
   }
 }
 
-function getComingSoonScreen (nextStream) {
-  var nextDate = new Date(nextStream.from)
-  var nextTime = nextDate.getHours() + '.' + nextDate.getMinutes()
+function getComingSoonScreen (poster = 'comingsoon.jpg') {
+  var imageFolder = window.location.origin + '/images/'
+  var imagePath = imageFolder + poster
 
-  var html = '<body style="background: #000; color: #fff; font-family: \'Ubuntu\', sans-serif; display: flex; justify-content: center; align-items: center;">'
-  html += 'De uitzending is beschikbaar vanaf ' + nextTime + ' uur'
-  html += '</body>'
-
+  var html = '<body style="background: url(\'' + imagePath + '\') center / cover;"></body>'
   return 'data:text/html;charset=utf-8,' + escape(html)
 }
 
