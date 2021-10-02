@@ -6,8 +6,8 @@ setInterval(function () { updateCurrentLivestream() }, 30000)
 
 function updateCurrentLivestream () {
   var $livestreamIframe = document.getElementById('livestream_iframe')
-  var $gebarentolkLink = document.getElementById('gebarentolk_link')
-  var $gebarentolkButton = document.getElementById('gebarentolk_button')
+  // var $gebarentolkLink = document.getElementById('gebarentolk_link')
+  // var $gebarentolkButton = document.getElementById('gebarentolk_button')
 
   var now = new Date()
 
@@ -22,8 +22,8 @@ function updateCurrentLivestream () {
       }
 
       var urls = {
-        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier + '?autoplay=1',
-        gebarentolk: 'https://youtu.be/' + stream.ids.gebarentolk
+        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier + '?autoplay=1'
+        // gebarentolk: 'https://youtu.be/' + stream.ids.gebarentolk
       }
 
       if ($livestreamIframe.src === urls.regulier) {
@@ -31,8 +31,8 @@ function updateCurrentLivestream () {
       }
 
       $livestreamIframe.src = urls.regulier
-      $gebarentolkLink.href = urls.gebarentolk
-      $gebarentolkButton.href = urls.gebarentolk
+      // $gebarentolkLink.href = urls.gebarentolk
+      // $gebarentolkButton.href = urls.gebarentolk
 
       break
     }
@@ -50,7 +50,7 @@ function getComingSoonScreen (poster) {
 }
 
 // Animated icons
-var icons = ['phone', 'mail']
+var icons = ['mail', 'speech']
 icons.forEach(function (icon) {
   var lottie = bodymovin.loadAnimation({
     container: document.getElementById('care_' + icon + '_icon'),
