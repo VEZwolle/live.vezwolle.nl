@@ -6,8 +6,8 @@ setInterval(function () { updateCurrentLivestream() }, 30000)
 
 function updateCurrentLivestream () {
   var $livestreamIframe = document.getElementById('livestream_iframe')
-  var $gebarentolkLink = document.getElementById('gebarentolk_link')
-  var $gebarentolkButton = document.getElementById('gebarentolk_button')
+  // var $gebarentolkLink = document.getElementById('gebarentolk_link')
+  // var $gebarentolkButton = document.getElementById('gebarentolk_button')
 
   var now = new Date()
 
@@ -31,8 +31,8 @@ function updateCurrentLivestream () {
       }
 
       $livestreamIframe.src = urls.regulier
-      $gebarentolkLink.href = urls.gebarentolk
-      $gebarentolkButton.href = urls.gebarentolk
+      // $gebarentolkLink.href = urls.gebarentolk
+      // $gebarentolkButton.href = urls.gebarentolk
 
       break
     }
