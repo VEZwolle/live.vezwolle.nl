@@ -50,7 +50,7 @@ function getComingSoonScreen (poster) {
 }
 
 // Animated icons
-var icons = ['phone', 'mail']
+var icons = ['mail', 'speech']
 icons.forEach(function (icon) {
   var lottie = bodymovin.loadAnimation({
     container: document.getElementById('care_' + icon + '_icon'),
