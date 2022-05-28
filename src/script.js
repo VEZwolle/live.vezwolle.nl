@@ -22,8 +22,8 @@ function updateCurrentLivestream () {
       }
 
       var urls = {
-        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier + '?autoplay=1',
-        gebarentolk: 'https://youtu.be/' + stream.ids.gebarentolk
+        regulier: 'https://www.youtube.com/embed/' + stream.ids.regulier + '?autoplay=1'
+        // gebarentolk: 'https://youtu.be/' + stream.ids.gebarentolk
       }
 
       if ($livestreamIframe.src === urls.regulier) {
