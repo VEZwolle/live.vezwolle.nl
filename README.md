@@ -1,4 +1,4 @@
-# live.vezwolle.nl
+# [live.vezwolle.nl](https://live.vezwolle.nl)
 
 Pagina waar elke zondag de livestream van de VEZwolle te vinden is.
 
