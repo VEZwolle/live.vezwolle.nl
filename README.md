@@ -1,8 +1,6 @@
-# Deploy
-Code die je hier aanpast wordt automatisch direct(!) live gezet op Netlify.
+# live.vezwolle.nl
 
-# To do
-- Grote afbeeldingen verkleinen
-- Logo's als svg aanbieden
-- Facebook link share toont Givt logo, moet ander plaatje komen
-- Google Analytics?
+Pagina waar elke zondag de livestream van de VEZwolle te vinden is.
+
+## Deploy
+De main branch wordt automatisch live gezet d.m.v. Netlify.
